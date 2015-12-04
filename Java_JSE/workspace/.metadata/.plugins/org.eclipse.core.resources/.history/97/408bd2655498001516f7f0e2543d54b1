@@ -1,0 +1,31 @@
+package Exercicios.Ex03;
+
+public class Acampamento {
+	private String nome;
+	private String equipe;
+	private int idade;
+
+	public Acampamento (String nome, String equipe, int idade) {
+		this.nome = nome;
+		this.equipe = equipe;
+		this.idade = idade;
+	}
+	
+	public void imprimir(){
+		System.out.println("-------------------------------------");
+		System.out.println("Nome ..: " + nome);
+		System.out.println("Equipe : " + equipe);
+		System.out.println("Idade .: " + idade);
+	}
+	
+	public void separarGrupo() {
+		if((idade >= 6) && (idade < 11))
+			equipe = "A";
+		else
+			if((idade >= 11) && (idade < 21))
+				equipe = "B";
+			else
+				if(idade > 21)
+					equipe = "C";
+	}
+}

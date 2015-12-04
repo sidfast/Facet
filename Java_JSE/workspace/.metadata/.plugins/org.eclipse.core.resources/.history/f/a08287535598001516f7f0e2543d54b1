@@ -1,0 +1,29 @@
+package Exercicios.Ex05;
+
+public class Computador {
+	private String marca;
+	private String cor;
+	private String modelo;
+	private int    numeroSerie;
+	private float  preco;
+
+	public void Computador(String marca, String cor, String modelo,	int numeroSerie, float preco){
+		this.marca       = marca;
+		this.cor         = cor;
+		this.modelo      = modelo;
+		this.numeroSerie = numeroSerie;
+		this.preco       = preco;
+	}
+	
+	public void imprimir(){
+		
+	}
+	
+	public void calcularValor(){
+		
+	}
+	
+	public void alterarValor(){
+		
+	}
+}

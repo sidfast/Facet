@@ -1,0 +1,54 @@
+package Exercicios.Ex01;
+
+public class Apolice {
+
+	private String nomeSegurado;
+	private int idade;
+	private double valorPremio;
+
+	public Apolice(String nomeSegurado, int idade, double valorPremio) {
+		this.nomeSegurado = nomeSegurado;
+		this.idade        = idade;
+		this.valorPremio  = valorPremio;
+	}
+
+	public void imprimir() {
+		System.out.println("Nome: "   + nomeSegurado);
+		System.out.println("Idade: "  + idade);
+		System.out.println("Prêmio: " + valorPremio);
+	}
+
+	public void calcularPremioApolice() {
+		double percPremio; 
+		percPremio = 1;
+		
+		if(idade > 18 && idade <= 25) 
+			percPremio = 25;
+		else 
+			if(idade > 25 && idade <= 36) 
+				percPremio = 15;
+			else 
+				if (idade > 36) 
+					percPremio = 10;
+		
+		valorPremio += (valorPremio * percPremio) / 100;
+	}
+
+	public void oferecerDesconto(String cidade) {
+		switch(cidade){
+		case "Curitiba":
+			valorPremio -= valorPremio * 0.20;
+			break;
+		case "Rio de Janeiro":
+			valorPremio -= valorPremio * 0.15;
+			break;
+		case "São Paulo":
+			valorPremio -= valorPremio * 0.1;
+			break;
+		case "Belo Horizonte":
+			valorPremio -= valorPremio * 0.05;
+			break;
+		default:
+		}
+	}
+}

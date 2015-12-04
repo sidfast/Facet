@@ -1,0 +1,18 @@
+package Exercicios.Ex06;
+
+import Exercicios.Ex05.Computador;
+
+public class PrincipalComputador {
+	
+	public static void main(String[] args) {
+		String marca    = "IBM";
+		String cor      = "Preto";
+		String modelo   = "386AT";
+		int numeroSerie = 13456789;
+		double preco    = 1999.99;
+		
+		Computador novoComputador = new Computador(marca, cor, modelo, numeroSerie, preco);
+		novoComputador.imprimir(); 
+	}
+
+}

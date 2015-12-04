@@ -1,0 +1,38 @@
+package Exercicios.Ex06;
+
+import Exercicios.Ex05.Computador;
+
+public class PrincipalComputador {
+
+	public static void main(String[] args) {
+		String marca    = "HP";
+		String cor      = "Preto";
+		String modelo   = "386AT";
+		int numeroSerie = 13456789;
+		double preco    = 1999.99;
+
+		Computador Computador1 = new Computador(marca, cor, modelo, numeroSerie, preco);
+		Computador1.imprimir();
+
+		Computador1.calcularValor();
+		Computador1.imprimir();
+
+		marca = "IBM";
+
+		Computador Computador2 = new Computador(marca, cor, modelo, numeroSerie, preco);
+		Computador2.calcularValor();
+		Computador2.imprimir();
+
+		if(Computador2.alterarValor(2000) == 1)
+			System.out.println("Alterado");
+		else
+			System.out.println("Não Alterado");
+
+		if(Computador2.alterarValor(-2) == 1)
+			System.out.println("Alterado");
+		else
+			System.out.println("Não Alterado");
+
+		Computador2.imprimir();
+	}
+}

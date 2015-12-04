@@ -1,0 +1,18 @@
+package Exercicios.Ex08;
+
+import Exercicios.Ex07.ContaCorrente;
+
+public class PrincipalContaCorrente {
+
+	public static void main(String[] args) {
+		String conta   = "01233-26";
+		String agencia = "321-X";
+		double saldo   = 0;
+		String cliente = "Sidney";
+
+		ContaCorrente ContaCorrente1 = new ContaCorrente(conta, agencia, saldo, cliente);
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package Exercicios.Ex02;
+
+public class Apolice {
+
+	String nomeSegurado;
+	int idade;
+	double valorPremio;
+	
+	public static void main(String[] args) {
+		
+	}
+}

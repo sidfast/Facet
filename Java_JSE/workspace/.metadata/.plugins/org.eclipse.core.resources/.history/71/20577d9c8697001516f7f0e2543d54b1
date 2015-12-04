@@ -1,0 +1,31 @@
+package Exercicios.Ex02;
+
+import java.util.Scanner;
+import Exercicios.Ex01.Apolice;
+
+public class PrincipalApolice{
+
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Digite o nome: ");
+		String nome = input.nextLine();
+		
+		System.out.print("Digite a idade: ");
+		int idade = Integer.parseInt(input.nextLine());
+		
+		System.out.print("Digite o Valor do Premio da Apólice: ");
+
+		double valorPremio = Double.parseDouble(input.nextLine());
+
+		Apolice novaApolice = new Apolice(nome, idade, valorPremio);
+		novaApolice.imprimir();
+		novaApolice.calcularPremioApolice();
+
+		System.out.print("Digite a cidade: ");
+		String cidade = input.nextLine();
+		novaApolice.oferecerDesconto(cidade);
+
+		novaApolice.imprimir();
+	}
+}

@@ -1,0 +1,10 @@
+package Exercicios.Ex04;
+
+public class PrincipalAcampamento {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

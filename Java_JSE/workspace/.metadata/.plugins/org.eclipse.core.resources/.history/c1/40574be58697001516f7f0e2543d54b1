@@ -1,0 +1,21 @@
+package Exercicios.Ex02;
+
+import Exercicios.Ex01.Apolice;
+
+public class PrincipalApolice{
+
+	public static void main(String args[]){
+		String nome = "Sidney";
+		int idade = 43;
+		double valorPremio = 100;
+		String cidade = "Curitiba";
+
+		Apolice novaApolice = new Apolice(nome, idade, valorPremio);
+
+		novaApolice.imprimir();
+		novaApolice.calcularPremioApolice();
+		novaApolice.imprimir();
+		novaApolice.oferecerDesconto(cidade);
+		novaApolice.imprimir();
+	}
+}

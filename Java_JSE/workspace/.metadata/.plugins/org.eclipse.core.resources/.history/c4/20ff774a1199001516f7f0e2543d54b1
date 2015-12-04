@@ -1,0 +1,56 @@
+package Exercicios.Ex08;
+
+import java.util.Scanner;
+import Exercicios.Ex07.ContaCorrente;
+
+public class PrincipalContaCorrente {
+
+	public static void main(String[] args) {
+		String conta   = "01233-26";
+		String agencia = "321-X";
+		double saldo   = 0;
+		String cliente = "Sidney";
+		int numero     = 1;
+
+		ContaCorrente ContaCorrente1 = new ContaCorrente(conta, agencia, saldo, cliente);
+
+		while(numero > 0){ 
+			Scanner input = new Scanner(System.in).useDelimiter("\r\n");
+			System.out.println("---------------------------------------------------------");
+			System.out.println("1 - Cadastrar");
+			System.out.println("2 - Sacar");
+			System.out.println("3 - Depositar");
+			System.out.println("4 - Consultar");
+			System.out.println("0 - Sair");
+			System.out.print("Digite o número correspondente a opção desejada: ");
+			numero = input.nextInt();
+
+			switch(numero){
+			case 1: execCadastrar();
+			case 2: execSaque();
+			case 3: execDeposito();
+			case 4: execConsulta();
+			default: System.out.println("Aplicação concluída!");
+			}
+
+		}
+
+	}
+	
+	private static int execSaque(){
+		return 0;
+		
+	}
+
+	private static void execDeposito(){
+		
+	}
+	
+	private static void execConsulta(){
+		
+	}
+	
+	private static void execCadastrar(){
+		
+	}
+}

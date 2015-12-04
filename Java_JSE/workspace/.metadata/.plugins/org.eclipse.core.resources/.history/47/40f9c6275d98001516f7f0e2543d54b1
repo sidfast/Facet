@@ -1,0 +1,10 @@
+package Exercicios.Ex06;
+
+public class PrincipalComputador {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
